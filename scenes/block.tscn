@@ -7,9 +7,9 @@ size = Vector2(29, 29)
 
 [node name="Block" type="StaticBody2D" groups=["Block"]]
 
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_o6xl0")
+
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("1_8r6n6")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("RectangleShape2D_o6xl0")

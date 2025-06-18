@@ -7,10 +7,10 @@ size = Vector2(21, 21)
 
 [node name="RotatedSquare" type="StaticBody2D" groups=["Block"]]
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.2, 0.2)
-texture = ExtResource("1_u0vah")
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 rotation = 0.785398
 shape = SubResource("RectangleShape2D_tipki")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_u0vah")

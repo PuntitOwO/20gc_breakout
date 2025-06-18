@@ -7,10 +7,10 @@ radius = 14.0
 
 [node name="Circle" type="StaticBody2D" groups=["Block"]]
 
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_85g3d")
+
 [node name="Sprite2D" type="Sprite2D" parent="."]
 rotation = 0.785398
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("1_wcjn7")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CircleShape2D_85g3d")
