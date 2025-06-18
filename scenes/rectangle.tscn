@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://cqatyn18be1fm"]
+
+[ext_resource type="Texture2D" uid="uid://c00gccsrvga4m" path="res://assets/sprites/tile_rectangle.png" id="1_gsh21"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o6xl0"]
+size = Vector2(41, 21)
+
+[node name="Rectangle" type="StaticBody2D" groups=["Block"]]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_gsh21")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_o6xl0")

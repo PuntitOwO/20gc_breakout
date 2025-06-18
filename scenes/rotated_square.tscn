@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://bg0yjqw2o3u42"]
+
+[ext_resource type="Texture2D" uid="uid://d3yeyc33d4o45" path="res://assets/sprites/tile_rotated_square.png" id="1_u0vah"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tipki"]
+size = Vector2(21, 21)
+
+[node name="RotatedSquare" type="StaticBody2D" groups=["Block"]]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_u0vah")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = 0.785398
+shape = SubResource("RectangleShape2D_tipki")

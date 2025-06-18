@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://b4fbqn1iuids5"]
+
+[ext_resource type="Texture2D" uid="uid://ch3c0y5vp3din" path="res://assets/sprites/tile_circle.png" id="1_wcjn7"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_85g3d"]
+radius = 14.0
+
+[node name="Circle" type="StaticBody2D" groups=["Block"]]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+rotation = 0.785398
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_wcjn7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_85g3d")
